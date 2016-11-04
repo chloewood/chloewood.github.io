@@ -2,11 +2,46 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>My Site!</title>
+    <title>Baby endangered animals</title>
   </head>
   <body>
-    <p> Hello world </p>
-    <a href="page_1.html">Page 1</a>
-    <a href="page_2.html">Page 2</a>
+    <h1>Animals</h1>
+    <a href="hawksbill_turtle.html">Hawksbill Turtle</a>
+  <br>
+    <a href="black_rhino.html">Black Rhino</a>
+    <h1>More info</h1>
+    <ul>
+      <li><a href="https://www.worldwildlife.org/species/directory?direction=desc&sort=extinction_status">Species list</a></li>
+      <li><a href="https://gifts.worldwildlife.org/gift-center/Default.aspx?sc=AWY1302WC913&_ga=1.29176700.1378065615.1475805929">"Adopt" an animal</a></li>
+      <li><a href="https://www.fws.gov/endangered/">US endangered species</a></li>
+    </ul>
+    <h1>Search Bing for baby animal facts!</h1>
+    <form action="http://www.bing.com/search" method="get">
+      Search: <input type="text" name=q>
+      <br />
+      <!-- Input creates the box, then q tells your browser to append ?q= to the end of the URL /> -->
+      <input type="submit" value="Submit" />
+    </form>
+    <h1>What's your favorite type of animal?</h1>
+    <form action="http://httpbin.org/post" method="post">
+      Species: <input type="text" name="species">
+      <br />
+
+      <input type="checkbox" name="age" value="baby"> Baby<br>
+      <input type="checkbox" name="age" value="adult"> Adult<br>
+
+      How endangered do you think this is:
+      <select name="conservation">
+        <option value="not endangered">Not Endangered</option>
+        <option value="vulnerable">Vulnerable</option>
+        <option value="endangered">Endangered</option>
+        <option value="critically endangered">Critically Endangered</option>
+      </select>
+      <br>
+      <input type="radio" name="pay" value="yes"> I would pay for this animal.<br>
+      <input type="radio" name="pay" value="no"> I would not pay for this animal.<br>
+      E-mail:<input type="email" name="email"><br>
+      <input type="submit" value="Submit" />
+    </form>
   </body>
 </html>
